@@ -4,21 +4,25 @@ using System.Collections;
 
 namespace Day14_StackProgram
 {
-    internal class Program
+    internal class program
     {
         static void Main(String[] args)
         {
-            Queue q = new Queue();
-            q.enqueue(56);
-            q.enqueue(30);
-            q.dequeue();
-            q.dequeue();
-            q.enqueue(70);
-            q.enqueue(40);
-            q.enqueue(50);
-            q.dequeue();
-            Console.WriteLine("Queue Front : " + q.front.key);
-            Console.WriteLine("Queue Rear : " + q.rear.key);
+            Queue queue = new Queue();
+
+            // Adding elements in Queue
+            queue.Enqueue(2);
+            queue.Enqueue(4);
+
+            Console.WriteLine("Number of elements in the Queue: {0}", queue.Count);
+
+            // Retrieveing top element of queue
+            Console.WriteLine("Top element of queue is:");
+            Console.WriteLine(queue.Dequeue());
+
+            // printing the no. of queue element
+            // after dequeue operation
+            Console.WriteLine("Number of elements in the Queue: {0}",  queue.Count);
         }
     }
 }

@@ -50,5 +50,15 @@ namespace Day14_StackProgram
             if (this.front == null)
                 this.rear = null;
         }
+
+        internal void Enqueue(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool Dequeue()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
