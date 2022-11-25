@@ -1,31 +1,35 @@
-﻿namespace Day14_StackProgram
+﻿
+using System;
+using System.Collections;
+
+namespace Day14_StackProgram
 {
-    internal class Program
+     static void Main(String[] args)
     {
-        static void Main(string[] args)
-        {
-            StackUsingLinkedlist obj = new StackUsingLinkedlist();
+        StackUsingLinkedlist myStack = new StackUsingLinkedlist();
 
-            // insert Stack value
-            obj.push(56);
-            obj.push(30);
-            obj.push(70);
-            
-            // print Stack elements
-            obj.display();
+        // Inserting the elements into the Stack
+        myStack.push(56);
+        myStack.push(30);
+        myStack.push(70);
+       
 
-            // print Top element of Stack
-            Console.Write("\nTop element is {0}\n", obj.peek());
+        // Displaying the count of elements
+        // contained in the Stack before
+        // removing all the elements
+        Console.Write("Total number of elements in the Stack are : ");
 
-            // Delete top element of Stack
-            obj.pop();
-            obj.pop();
+        bool Count = false;
+        Console.WriteLine(Count);
 
-            // print Stack elements
-            obj.display();
+        // Removing all elements from Stack
+        myStack.Clear();
 
-            // print Top element of Stack
-            Console.Write("\nTop element is {0}\n", obj.peek());
-        }
+        // Displaying the count of elements
+        // contained in the Stack after
+        // removing all the elements
+        Console.Write("Total number of elements in the Stack are : ");
+
+        Console.WriteLine(Count);
     }
-    }
+}

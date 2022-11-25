@@ -98,5 +98,10 @@ namespace Day14_StackProgram
                 }
             }
         }
+
+        internal void Clear()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
